@@ -1,0 +1,204 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.main-box {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* border: 1px solid #f00; */
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    height: 230px;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.search {
+    position: relative;
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .search input {
+    width: 100%;
+    height: 32px;
+  
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    /* box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset; */
+  }
+  
+  .search input { text-indent: 32px;}
+  .search .fa-search { 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+.addBox {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    text-align: center;
+    background-color: #f00;
+}
+.addBox .btn_add {
+    position: relative;
+    top: -40px;
+    font-size: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background: #f00;
+}
+.mdl-dialog {
+    width: 80%;
+    height: 80%;
+    /* background: #f00; */
+}
+.content-dialog {
+    height: 350px;
+    overflow: auto;
+    /* border: 1px solid #f00; */
+}
+.cardBackground {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+    background-color: 1px solid #f3f4f7;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(213,214,220,1);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(213,214,220,1);
+    box-shadow: 0px 0px 21px 0px rgba(213,214,220,1);
+    /* border: 1px solid #f00; */
+}
+.cardBackground:hover {
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(174,174,174,1);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(174,174,174,1);
+    box-shadow: 0px 0px 21px 0px rgba(174,174,174,1);
+}
+.cardBackground-dialog {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 40%; */
+    background-color: 1px solid #f3f4f7;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(213,214,220,1);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(213,214,220,1);
+    box-shadow: 0px 0px 21px 0px rgba(213,214,220,1);
+    /* border: 1px solid #f00; */
+}
+.cardBackground-dialog:hover {
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(174,174,174,1);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(174,174,174,1);
+    box-shadow: 0px 0px 21px 0px rgba(174,174,174,1);
+}
+.remove {
+    position: absolute;
+    right: 20px;
+}
+.remove a {
+    color: #f3701a;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+    display: none;
+}
+.cardBackground:hover .remove a {
+    display: block;
+}
+.add {
+    position: absolute;
+    right: 20px;
+}
+.add a {
+    color: #f3701a;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+}
+.cardBackground-dialog:hover .add a {
+    display: block;
+}
+.display-pic {
+    float: left;
+}
+.display-pic img {
+    width: 150px;
+}
+.display-data {
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+.display-detail {
+    position: relative;
+    top: -30px;
+}
+.display-name h3 {
+    font-family: 'Atma', cursive;
+    font-size: 16px;
+}
+.display-progress {
+    margin-top: 10px; 
+}
+.display-progress > label {
+    float: left;
+    position: relative;
+    width: 70px;
+    top: -5px;
+}
+.display-progress > .meter {
+    float: left;
+    width: 120px;
+}
+.meter { 
+	height: 20px;  /* Can be anything */
+	position: relative;
+	background: #e4e4e4;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	/* padding: 10px; */
+	box-shadow: inset 0 -1px 1px #d4d4d4;
+}
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #f3701a;
+    position: relative;
+    overflow: hidden;
+  }
+  .material-icons {
+      color: rgb(160, 236, 19);
+  }
